@@ -1,0 +1,565 @@
+@font-face {
+	font-family: 'AdvergothicItalic';
+	src: url('../fonts/AdverGothicItalic/advergothic_italic.eot');
+	src: local('☺'), url('../fonts/AdverGothicItalic/advergothic_italic.woff') format('woff'), url('../fonts/AdverGothicItalic/advergothic_italic.ttf') format('truetype'), url('../fonts/AdverGothicItalic/advergothic_italic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'AdverGothicRegular';
+	src: url('../fonts/AdverGothicRegular/AdverGothicRegular.eot');
+	src: local('☺'), url('../fonts/AdverGothicRegular/AdverGothicRegular.woff') format('woff'), url('../fonts/AdverGothicRegular/AdverGothicRegular.ttf') format('truetype'), url('../fonts/AdverGothicRegular/AdverGothicRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (max-width:1090px) {
+    .block-1-card__photo {
+        max-height: 400px;
+    }
+}
+
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+._limit {
+    max-width: 1096px;
+    margin: 0 auto;
+}
+
+._ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+/*--------HEADER-----------------------------------------*/
+
+.header {
+    background-color: #000;
+    box-shadow: 0px 0px 5px 1px red;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+}
+
+.header__content-1 {
+    display: flex;
+}
+
+.header__content-2 {
+    display: flex;
+    color: #fff;
+    font-family: 'AdverGothicRegular';
+    font-style: normal;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+}
+
+.header__contact-social {
+    padding-left: 30px;
+}
+
+.header__contact-social img {
+    width: 25px;
+    padding-right: 10px;
+}
+
+
+.header__title {
+    color: #F69C2C;
+    font-family: 'AdvergothicItalic';
+    font-style: italic;
+    font-size: 36px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.header__nav__link {
+    font-family: 'AdverGothicRegular';
+    font-style: normal;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+/*-----------BLOCK-1---------------------------------*/
+
+.block-1 {
+    position: relative;
+}
+
+.block-1__main-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.block-1__card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px 0px 20px;
+}
+
+.block-1-card__title {
+    display: inline;
+    padding: 12px 0px;
+    font-family: 'AdverGothicRegular';
+    font-style: normal;
+    color: #fff;
+    font-size: 17px;
+}
+
+.block-1-card__photo {
+    display: flex;
+    height: 700px;
+}
+
+.block-1__background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*-----------BLOCK-SPLIT-------------------------------*/
+
+.block-split {
+    max-width: 100%;
+    padding: 10px;
+    background-color: #0B0B0D;
+    font-family: 'AdverGothicItalic';
+    font-style: italic;
+    color: #F69C2C;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 3px;
+}
+
+/*---------------BLOCK-2--------------------------------------*/
+
+.block-2 {
+    position: relative;
+}
+
+.block-2__main-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+}
+
+.block-2__card {
+    height: 300px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+}
+
+.block-2__card:hover {
+    height: 295px;
+    
+}
+
+.block-2-card__title {
+    font-family: 'AdverGothicItalic';
+    font-style: italic;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    text-shadow: 1px 3px 1px #000;
+    text-align: center;
+}
+
+.block-2-card__button {
+    font-family: 'AdverGothicRegular';
+    font-style: normal;
+    font-size: 24px;
+    padding: 10px 10px;
+    margin: 15px;
+    background-color: #F69C2C;
+    border-radius: 30px;
+    color: #000;
+}
+
+.block-2-card__button:hover {
+    background-color: #9e651e;
+    color: #fff;
+    transition: all 0.8s ease 0s;
+}
+
+.block-2__background {
+    position: relative;
+    margin: 15px;
+    box-shadow: 0px 0px 10px 5px #000;
+}
+
+.block-2__background-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.block-2__background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*-----------BLOCK-3---------------------------*/
+
+.block-3 {
+    position: relative;
+}
+
+.block-3__main-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.block-3-card__content {
+    font-family: 'AdverGothicRegular';
+    font-style: normal;
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 0px 0px 10px #000;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.WAButton {
+    font-family: 'AdverGothicRegular';
+    font-style: normal;
+    font-size: 24px;
+    padding: 10px 10px;
+    margin: 15px;
+    background-color: #49C858;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.WAButton img {
+    display: block;
+    width: 35px;
+    margin-right: 8px;
+}
+
+.TButton {
+    font-family: 'AdverGothicRegular';
+    font-style: normal;
+    font-size: 24px;
+    padding: 10px 10px;
+    margin: 15px;
+    background-color: #30A3E6;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TButton img {
+    display: block;
+    width: 35px;
+    margin-right: 8px;
+}
+
+.WAButton:hover {
+    background-color: #34923f;
+    color: #fff;
+    transition: all 0.8s ease 0s;
+}
+
+.TButton:hover {
+    background-color: #2377a8;
+    color: #fff;
+    transition: all 0.8s ease 0s;
+}
+
+.block-3__background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*-------------------------FOOTER----------------------*/
+
+.footer {
+    background-color: #000;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.footer-content__part1 {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-content__part2 {
+    font-family: 'AdverGothicRegular';
+    font-style: normal;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup__content {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__content {
+    background: none;
+    color: #000;
+    width: 600px;
+    height: 800px;
+    position: relative;
+    transform: translate(0px, -100%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.popup__close {
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    text-decoration: none;
+    color:#fff;
+}
+
+.popup__close:hover {
+    font-size: 15px;
+}
+
+.popup__photo {
+    width: 543px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.popup__1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+.popup__body__1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+.popup__content__1 {
+    width: 300px;
+    background-color: #fff;
+    position: relative;
+    padding: 30px;
+}
+.popup__close__1 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #000;
+}
+.popup__title__1 {
+    font-size: 18px;
+    color: #000;
+}
+.popup__text__1 {
+    font-size: 16px;
+    color: #000;
+}
+
+.popup.open__1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open__1 .popup__content__1 {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.block-4 {
+    position: relative;
+}
+
+.block-4__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'AdverGothicRegular';
+    font-style: normal;
+    position: relative;
+    z-index: 1;
+}
+
+.content__card-1 {
+    width: 33.3%;
+    height: 300px;
+    box-shadow: 0px 0px 10px 5px #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    background-image: url(../img/fitness-trainer-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.card-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/fitness-trainer-2.jpg);
+}
+
+.card-1:hover {
+    z-index: 4;
+    object-fit: cover;
+}
+
+.card-1__content {
+    padding: 15px;
+    font-size: 14px;
+    text-shadow: 1px 3px 1px #000; 
+}
+
+.card-1__cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/fitness-trainer-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    z-index: 3;
+    transition: all 0.8s ease 0.2s;
+}
+
+.card-1__cover:hover {
+    transform: translate(0px, -100%);
+    opacity: 0;
+    transition: all 0.8s ease 0.2s;
+}
+
+._c3 {
+    background-image: url(../img/crossfit.jpg);
+}
+
+._c2 {
+    background-image: url(../img/nutriciolog.jpg);
+}
+
+
+.block-4__background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
